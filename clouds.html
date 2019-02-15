@@ -1,0 +1,108 @@
+<!-- Define doctype and language -->
+<!DOCTYPE html>
+<html lang = 'en'>
+
+<!-- Use head to title file and reference the reset and style files -->
+<head>
+    <meta charset="UTF-8">
+    <title>Web_HW</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src=“http://code.jquery.com/jquery-latest.min.js” type=“text/javascript”></script>
+    <script src=“https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js” integrity=“sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa” crossorigin=“anonymous”></script>
+    </head> 
+
+<body>
+    
+    <!-- setting up navbar -->
+    <nav class="navbar navbar-default">
+        <div class= "container">
+            <div class= "navbar-header">
+                <a class="navbar-home" href= "Home_page.html">
+                <span class= "navbar-color" id = "logo">Latitude</span></a>
+            </div>
+
+            <div class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plots <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="clouds.html">Lat vs. Cloudiness</a></li>
+                      <li><a href="humidity.html">Lat vs. Humidity</a></li>
+                      <li><a href="temp.html">Lat vs. Temperature </a></li>
+                      <li><a href="wind.html">Lat vs. Wind Speed</a></li>
+                  </ul>
+                </li>
+                <li><a href= "comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- container for the main content -->
+    <div class = "container">
+            <div class= "row">
+                <div class = "col-md-7">
+                    <h1>Cloudiness</h1>
+                    <hr style="border: 1px solid grey;" />
+                    <img src= "Images/lat_wind.png" class = "center-block" width = 500 height = 350 alt = 'wind chart'>
+                    <p>There was no correlation that could be atrributed between latitudinal coordinates and cloudiness.
+                        These two variables appear to be entirely indpependent of one another and no other conclusions
+                        can be made about cloudiness and latitude.
+                        </p>
+                    </div>
+                
+                <!-- sidebar of additional visualizations -->
+                <div class = 'col-md-4 sidebar'>
+                    <h1>Visualizations</h1>
+                    <hr style="border: 1px solid grey;" />
+    
+                    <div class = 'row'>
+                        <div class = 'col-md-3'>
+                            <a href= "temp.html">
+                            <img src = "Images/lat_temp.png" width="180" height = "150" alt = 'temp chart'></a>
+                            </div>
+    
+                        <div class = "col-md-3"></div>
+    
+                        <div class = 'col-md-3'>
+                            <a href = "humidity.html">
+                            <img src= "Images/lat_hmdty.png" width=180 height = 150 alt = 'humidity chart'></a>
+                            </div>
+    
+                        <div class = 'col-md-3'></div>
+                    </div>
+    
+                    <div class = 'row'>
+                        <div class = 'col-md-3'>
+                            <a href = "clouds.html">
+                                <img src='Images/lat_cloud.png' width = 180 height = 150 alt = 'cloud chart'></a>
+                            </div>
+    
+                        <div class = 'col-md-3'></div>
+    
+                        <div class = 'col-md-3'>
+                            <a href = "wind.html">
+                                <img src= 'Images/lat_wind.png'width = 180 height = 150 alt = 'wind chart'></a>
+                            </div>
+    
+                        <div class = 'col-md-3'></div>
+    
+                    </div>
+                    
+                    </div>
+    
+                </div>
+    
+            </div>
+        
+        <!-- add footer -->
+        <div class = "footer">&copy; Copyright Coding Bootcamp 2019</div>
+    
+    </body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
