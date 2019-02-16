@@ -35,7 +35,10 @@
                 </li>
                 <li><a href= "comparison.html">Comparison</a></li>
                 <li><a href="data.html">Data</a></li>
-                <select>
+                
+                <select onchange= 'location = this.value;'>
+                    <option value="" selected="selected">Select</option>
+
                     <option value ="wind.html">Wind</option>
                     <option value="temp.html">Temperature</option>
                     <option value="humidity.html">Humidity</option>

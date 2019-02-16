@@ -4,8 +4,7 @@ html,body {
 }
 
 .container {
-  min-height:100%;
-  margin-bottom: -50px;
+  
 }
 
 }
@@ -19,9 +18,12 @@ html,body {
 }
 
 .footer {
+  display:block;
   background:rgb(102, 101, 101);
   text-align:center;
   color: white;
+  width:100%;
+  /* position:fixed; */
 }
 .navbar-default {
   background:white;
@@ -78,7 +80,6 @@ p {
 }
 
 .table-bordered {
-  margin-top: -525px;
   background:white;
 }
 
@@ -95,16 +96,26 @@ img:hover {
 }
 
 
-@media (max-width:480px) {
+@media (max-width:768px) {
    
   .navbar-right select {
     display: inline-block;
+    background: rgb(33, 141, 123);
+    border: 1px solid black;
+    font-weight: bold;
+    color: white;
   }
   
   .navbar-right li {
     display: none;
   }
 
- 
+  .col-md-4 {
+    margin-left:0px;
+  }
 
+  p {
+    padding: 10px;
+  }
+ 
 }
